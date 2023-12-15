@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'my-background-image': "url('/path/to/your/background-image.jpg')",
-      },
+      // backgroundImage: {
+      //   'my-background-image': "url('/path/to/your/background-image.jpg')",
+      // },
       fontFamily: {
         satoshiR: ['Satoshi Light', 'sans-serif'],
         satoshiM: ['Satoshi Medium', 'sans-serif'],
