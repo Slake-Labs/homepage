@@ -48,7 +48,7 @@ const steps = [
     title: 'Transfer your sICP',
     des: 'Transfer your sICP tokens to other accountsor use in DeFi to earn additional yield.',
     isRight: false,
-    img: '/frontend/assets/step2.svg',
+    img: Step2Img
   },
   {
     stepNum: '03',
