@@ -1075,19 +1075,23 @@ video {
 }
 
 .font-satoshiB {
-  font-family: Satoshi Bold, sans-serif;
+  font-family: Satoshi, sans-serif;
+  font-weight: 700;
 }
 
 .font-satoshiBlack {
-  font-family: Satoshi Black, sans-serif;
+  font-family: Satoshi, sans-serif;
+  font-weight: 900;
 }
 
 .font-satoshiM {
-  font-family: Satoshi Medium, sans-serif;
+  font-family: Satoshi, sans-serif;
+  font-weight: 500;
 }
 
 .font-satoshiR {
-  font-family: Satoshi Light, sans-serif;
+  font-family: Satoshi, sans-serif;
+  font-weight: 500;
 }
 
 .text-\[16px\] {

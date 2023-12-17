@@ -1,11 +1,10 @@
 import React from 'react';
+import './ComponentWrapper.css';
 
-const ComponentWrapper = ({ styles = '', children }) => {
+const ComponentWrapper = ({ styles = {}, children }) => {
   return (
-    <div className={`w-full ${styles}`}>
-      <div className='w-full h-full max-w-[1300px] m-auto md:px-8 px-4'>
-        {children}
-      </div>
+    <div className={`wrapper-outer`}>
+      <div className='wrapper-inner'>{children}</div>
     </div>
   );
 };

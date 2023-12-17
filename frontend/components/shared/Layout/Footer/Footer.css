@@ -1,0 +1,152 @@
+.footer-con {
+  width: 100%;
+  margin-top: 40px;
+  background-color: white;
+  height: 200px;
+}
+
+.fContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.logo-image {
+  max-width: 192px;
+  height: 55px;
+  object-fit: contain;
+}
+/* <div className='flex flex-wrap justify-end lg:justify-center items-center gap-4 md:gap-8 lg:gap-12'> */
+
+.links-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 46px;
+}
+
+.fLink {
+  color: black;
+  text-transform: capitalize;
+  font-family: 'Satoshi';
+  font-weight: 300;
+  font-size: 20px;
+  position: relative;
+}
+
+.fLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.fLink:hover::after {
+  width: 100%;
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.logo-link {
+  display: block;
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialLinkCon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  background: var(--Gradient, linear-gradient(180deg, #00d1ff 0%, #06f 100%));
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s, transform 0.3s;
+  border-radius: 50%;
+}
+.socialLinkCon:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+.gitHubIcon {
+  font-size: 36px;
+  color: white;
+}
+.mediumIcon {
+  font-size: 32px;
+  color: white;
+}
+.discordIcon {
+  font-size: 34px;
+  color: white;
+}
+.twitterIcon {
+  font-size: 34px;
+  color: white;
+}
+@media screen and (max-width: 976px) {
+  .fContainer {
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+  }
+  .links-container {
+    justify-content: flex-end;
+    row-gap: 20px;
+    column-gap: 30px;
+    width: 100%;
+  }
+  .social-icons-container {
+    margin-top: -26px;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gitHubIcon {
+    font-size: 32px;
+  }
+  .mediumIcon {
+    font-size: 28px;
+  }
+  .discordIcon {
+    font-size: 30px;
+  }
+  .twitterIcon {
+    font-size: 28px;
+  }
+  .logo-image {
+    max-width: 160px;
+    height: 45px;
+  }
+  .fLink {
+    font-size: 16px;
+  }
+
+  .socialLinkCon {
+    width: 45px;
+    height: 45px;
+  }
+}

@@ -2,16 +2,22 @@ import React from 'react';
 import ComponentWrapper from '../../wrappers/ComponentWrapper';
 import * as Icons from '../../../svg/Icons';
 import WhyStakeCard from './WhyStakeCard';
+import './WhyStake.css';
+import { useNavigate } from 'react-router-dom';
 
 const WhyStakeOnSlake = () => {
+  const navigate = useNavigate();
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className='w-full relative'>
+    <div className='stakeContainer'>
       <ComponentWrapper>
-        <div className='w-full flex flex-col gap-5 sm:gap-8 justify-center items-center py-6 sm:py-20'>
-          <p className='text-[40px] sm:text-[46px] leading-[55px] md:text-[56px] text-center tracking-wide font-satoshiB text-white'>
-            Why Stake on Slake
-          </p>
-          <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center'>
+        <div className='wrapper'>
+          <p className='wTitle'>Why Stake on Slake</p>
+          <div className='cardWrapper'>
             {whyTakeOnSlakeData.map((item, index) => {
               return (
                 <WhyStakeCard
@@ -23,10 +29,21 @@ const WhyStakeOnSlake = () => {
               );
             })}
           </div>
+          <div className='btnWr'>
+            <button
+              onClick={() => {
+                scrollToTop();
+                navigate('/stake');
+              }}
+              className='stakeBtn'
+            >
+              Stake Now
+            </button>
+          </div>
         </div>
       </ComponentWrapper>
       {/* gradient for hero section -----------> */}
-      <div className='w-[250px] sm:w-[300px] h-[400px] md:h-[600px] bgGr absolute -right-0 -z-10 -top-56'></div>
+      <div className='bgGr stakeGr'></div>
     </div>
   );
 };
