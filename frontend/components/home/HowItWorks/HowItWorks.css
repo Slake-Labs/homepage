@@ -1,0 +1,159 @@
+.howItWorkContainer {
+  width: 100%;
+  position: relative;
+}
+.howItWork {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.hTitle {
+  font-size: 56px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Satoshi';
+  font-weight: 700;
+}
+.stepsWrapper {
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  gap: 16px;
+}
+
+.leftStep {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1.7fr;
+  justify-content: center;
+  align-items: center;
+}
+.rightStep {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.7fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+.stepWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.stepNum {
+  font-size: 64px;
+  font-family: Satoshi;
+  font-weight: 700;
+  background: var(--Gradient, linear-gradient(180deg, #00d1ff 0%, #06f 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.stepTitle {
+  color: black;
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-family: Satoshi;
+  font-weight: 700;
+}
+.stepDes {
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: Satoshi;
+  font-weight: 300;
+}
+.stepImg {
+  width: 100%;
+  height: 360px;
+  margin-top: 0px;
+}
+
+.step2Wrapper {
+  width: 100%;
+  grid-column: 1 / span 2;
+  display: flex;
+}
+
+.howGr {
+  width: 400px;
+  height: 550px;
+  position: absolute;
+  left: 0px;
+  top: -3rem;
+  z-index: -10;
+}
+@media screen and (max-width: 768px) {
+  .hTitle {
+    font-size: 46px;
+  }
+  .stepsWrapper {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .isRight {
+    grid-template-columns: 1fr 1fr;
+  }
+  .leftStep {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stepImg {
+    height: 180px;
+  }
+  .stepTitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stepsWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    gap: 16px;
+  }
+  .stepNum {
+    font-size: 55px;
+  }
+  .stepDes {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+  .rightStep {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .step2Wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftStep {
+    grid-template-columns: 1fr;
+  }
+  .stepImg {
+    margin-top: 8px;
+  }
+  .stepTitle {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .howGr {
+    width: 160px;
+    height: 300px;
+  }
+}

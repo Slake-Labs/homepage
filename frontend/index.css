@@ -1,114 +1,100 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #424242;
-}
-
-button {
-    font-weight: 600;
-}
-
-.slogan {
-    font-size: 1.7em;
-    margin-bottom: 0;
-}
-
-.twitter {
-    font-size: 0.4em;
-}
-
-.App-logo {
-    height: 14vmin;
-    pointer-events: none;
-    transform: scale(1);
-    animation: pulse 3s infinite;
-}
-
-.App-header {
-    height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-}
-
-.examples {
-    padding: 30px 100px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.examples-title {
-    font-size: 1.3em;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.example {
-    padding: 50px 50px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*border: 1px solid black;*/
-    /*background: #f4f4f4;*/
-    border-radius: 15px;
-}
-
-.example-disabled {
-    font-size: 1.3em;
-    color: #9e9e9e;
-}
-
-.demo-button {
-    background: #a02480;
-    padding: 0 1.3em;
-    margin-top: 1em;
-    border-radius: 60px;
-    font-size: 0.7em;
-    height: 35px;
-    outline: 0;
-    border: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #06f;
+  }
+  
+  /* fonts ----------------->  */
+  
+  @font-face {
+    font-family: 'Satoshi Regular';
+    font-style: normal;
+    font-weight: normal;
+    /* src: url('./fonts/Satoshi-Regular.woff'); */
+    src: url('https://fonts.cdnfonts.com/css/satoshi');
+    /* @import url("https://fonts.cdnfonts.com/css/satoshi"); */
+  }
+  
+  @font-face {
+    font-family: 'Satoshi Light';
+    font-style: normal;
+    font-weight: light;
+    src: url('https://fonts.cdnfonts.com/css/satoshi');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://fonts.cdnfonts.com/css/satoshi');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://fonts.cdnfonts.com/css/satoshi');
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://fonts.cdnfonts.com/css/satoshi');
+  }
+  
+  /* linear gradients ----------------->  */
+  
+  .btnGr {
+    background: var(--Gradient, linear-gradient(180deg, #00d1ff 0%, #06f 100%));
+  }
+  
+  .textGr {
+    background: var(--Gradient, linear-gradient(180deg, #00d1ff 0%, #06f 100%));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    border: none;
     cursor: pointer;
-    color: white;
-}
-
-.demo-button:active {
-    color: white;
-    background: #979799;
-}
-
-.auth-section {
-    padding: 1em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.97);
-        opacity: 0;
-    }
-
-    70% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(0.97);
-        opacity: 0;
-    }
-}
+  }
+  .bgGr {
+    border-radius: 822.053px;
+    opacity: 0.6;
+    background: var(--Light-Blue, #00d1ff);
+    filter: blur(100px);
+  }
+  
+  /* linear gradients ends here ---------------->  */
+  
+  /* shadows ---------------> */
+  
+  .cardShadow {
+    box-shadow: 0px 0px 28px 4px rgba(135, 135, 135, 0.15);
+  }
+  
+  .stackBg {
+    background-color: rgba(0, 208, 255, 0.2);
+  }
+  .inputBg {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  /* shadows ends here -------------> */
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .button-transition {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

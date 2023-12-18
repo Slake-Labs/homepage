@@ -1,0 +1,79 @@
+.stats-container {
+  width: 100%;
+  position: relative;
+  padding: 4rem 0px;
+}
+.stats-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+  margin-top: -32px;
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+.stats-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.stats-value {
+  font-size: 56px;
+  color: #fff;
+  font-family: Satoshi;
+  font-weight: 500;
+}
+.stats-name {
+  font-size: 24px;
+  color: #fff;
+  font-family: Satoshi;
+  font-weight: 500;
+}
+.statsGr {
+  width: 240px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 450px;
+  z-index: -10;
+}
+
+@media screen and (max-width: 976px) {
+  .stats-value {
+    font-size: 50px;
+  }
+  .stats-item {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stats-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 24px;
+  }
+  .statsGr {
+    width: 250px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .stats-wrapper {
+    padding-top: 24px;
+  }
+  .stats-item {
+    gap: 4px;
+  }
+  .statsGr {
+    width: 150px;
+    height: 250px;
+  }
+  .stats-container {
+    padding: 3rem 0px;
+  }
+}
