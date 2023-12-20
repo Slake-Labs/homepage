@@ -1,6 +1,7 @@
 import React from 'react';
 import ComponentWrapper from '../../wrappers/ComponentWrapper';
 import { useNavigate } from 'react-router-dom';
+import HeroImg from '/frontend/assets/heroImg.svg';
 import './Hero.css';
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
       <ComponentWrapper>
         <div className='hero'>
           {/* image --->  */}
-          <img src='/frontend/assets/heroImg.svg' alt='' className='hero-image' />
+          <img src={HeroImg} alt='' className='hero-image' />
           <p className='hroTitle'>Stake ICP</p>
           <p className='subtitle'>
             Earn Voting Rewards with <br /> little to no unlock times

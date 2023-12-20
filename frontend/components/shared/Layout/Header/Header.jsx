@@ -8,6 +8,7 @@ import { useLocation } from 'react-router-dom';
 import './Header.css';
 import ComponentWrapper from '../../../wrappers/ComponentWrapper';
 import { useNavigate } from 'react-router-dom';
+import SlakeLogo from '/frontend/assets/slake-logo.svg'
 
 const Header = () => {
   // states ----------------->
@@ -31,7 +32,7 @@ const Header = () => {
           <div className='header'>
             {/* logo ----->  */}
             <Link to='/'>
-              <img src='/frontend/assets/logo.svg' className='logoImg' alt='' />
+              <img src={SlakeLogo} className='logoImg' alt='' />
             </Link>
             {/* links ------>  */}
             <div className='links'>
