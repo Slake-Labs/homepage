@@ -52,17 +52,17 @@ const whyTakeOnSlakeData = [
   {
     icon: <Icons.Earn />,
     title: 'Earn Staking Rewards',
-    des: 'Lörem ipsum mist glaskulefolket infranin dänt, kura. Pangen prototal. Inaskad dengen, och nödat. Nöriheten banelig.',
-  },
-  {
-    icon: <Icons.Vote />,
-    title: 'Vote on Proposals in NNS',
-    des: 'Lörem ipsum mist glaskulefolket infranin dänt, kura. Pangen prototal. Inaskad dengen, och nödat. Nöriheten banelig.',
+    des: 'Earn yield on your ICP holdings without selling or locking',
   },
   {
     icon: <Icons.Reward />,
-    title: 'Earn Voting Rewards',
-    des: 'Lörem ipsum mist glaskulefolket infranin dänt, kura. Pangen prototal. Inaskad dengen, och nödat. Nöriheten banelig.',
+    title: 'Earn Slake Tokens',
+    des: 'Earn additional Slake tokens simply by holding sICP. Stake more ICP and hold longer to increase your Slake earnings.',
+  },
+  {
+    icon: <Icons.Vote />,
+    title: 'Vote on Proposals in SNS',
+    des: 'Slake is the governance token of the Slake SNS. Thus, you earn voting power simply by staking on Slake.',
   },
 ];
 

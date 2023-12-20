@@ -2,8 +2,9 @@ import React from 'react';
 import ComponentWrapper from '../../wrappers/ComponentWrapper';
 import Step from './Step';
 import './HowItWorks.css';
-import Step1Img from "/frontend/assets/step1.svg";
-import Step2Img from "../../../assets/step2.svg";
+import Step1Img from "/frontend/assets/stakeICP.svg";
+import Step2Img from "/frontend/assets/step2.svg";
+import Step3Img from "/frontend/assets/step3.svg";
 
 const HowItWorks = () => {
   return (
@@ -41,7 +42,7 @@ const steps = [
     title: 'Stake your ICP',
     des: 'Stake your ICP on Slake and receive transferrable SlakeICP (sICP) tokens which can be used to redeem your underlying ICP staked.',
     isRight: true,
-    img: {Step1Img}
+    img: Step1Img
   },
   {
     stepNum: '02',
@@ -52,10 +53,10 @@ const steps = [
   },
   {
     stepNum: '03',
-    title: 'Participate in NNSGovernance',
-    des: 'Vote on NNS proposals by proxy using Slaketokens. Your voting power is boosted by the amount of ICP you have staked.',
+    title: 'Participate in SNS Governance',
+    des: 'Vote on SNS proposals by proxy using Slake tokens. Your voting power is boosted by the amount of ICP you have staked.',
     isRight: true,
-    img: '/frontend/assets/step3.svg',
+    img: Step3Img
   },
 ];
 
