@@ -5,6 +5,8 @@ import './HowItWorks.css';
 import Step1Img from "/frontend/assets/stakeICP.svg";
 import Step2Img from "/frontend/assets/step2.svg";
 import Step3Img from "/frontend/assets/step3.svg";
+import Design02 from "/frontend/assets/Image02.png";
+import Design03 from "/frontend/assets/Image03.png";
 
 const HowItWorks = () => {
   return (
@@ -49,14 +51,14 @@ const steps = [
     title: 'Transfer your sICP',
     des: 'Transfer your sICP tokens to other accountsor use in DeFi to earn additional yield.',
     isRight: false,
-    img: Step2Img
+    img: Design02
   },
   {
     stepNum: '03',
     title: 'Participate in SNS Governance',
     des: 'Vote on SNS proposals by proxy using Slake tokens. Your voting power is boosted by the amount of ICP you have staked.',
     isRight: true,
-    img: Step3Img
+    img: Design03
   },
 ];
 
