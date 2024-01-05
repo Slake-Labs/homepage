@@ -13,7 +13,8 @@
       },
       "source": [
         "dist/",
-        "frontend/assets"
+        "frontend/assets",
+        "frontend/fonts"
       ],
       "type": "assets"
     }

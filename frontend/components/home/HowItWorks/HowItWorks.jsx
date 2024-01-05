@@ -42,21 +42,21 @@ const steps = [
   {
     stepNum: '01',
     title: 'Stake your ICP',
-    des: 'Stake your ICP on Slake and receive transferrable SlakeICP (sICP) tokens which can be used to redeem your underlying ICP staked.',
+    des: 'Stake your ICP on Slake and receive transferrable Slake Staked ICP (sICP) tokens which can be used to redeem your underlying ICP staked.',
     isRight: true,
     img: Step1Img
   },
   {
     stepNum: '02',
-    title: 'Transfer your sICP',
-    des: 'Transfer your sICP tokens to other accountsor use in DeFi to earn additional yield.',
+    title: 'Earn ICP & SLAKE Rewards',
+    des: 'Earn ICP staking and voting rewards. Stakers on Slake also receive the Slake governance token.',
     isRight: false,
     img: Design02
   },
   {
     stepNum: '03',
-    title: 'Participate in SNS Governance',
-    des: 'Vote on SNS proposals by proxy using Slake tokens. Your voting power is boosted by the amount of ICP you have staked.',
+    title: 'Redeem ICP with Flexibility',
+    des: 'Your Slake Staked ICP can be redeemed for ICP without lengthy lockups, subject to available liquidity.',
     isRight: true,
     img: Design03
   },

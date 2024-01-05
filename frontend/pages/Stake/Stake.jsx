@@ -171,11 +171,11 @@ const Stake = () => {
 
 const slakeStatistics = [
   {
-    name: 'Slaking APR',
+    name: 'Staking APR',
     value: '10.58%',
   },
   {
-    name: 'Total ICP Stake on Slake',
+    name: 'Total ICP Staked on Slake',
     value: '120,820',
   },
   {

@@ -41,6 +41,7 @@ const Header = () => {
                 return (
                   <Link
                     key={index}
+                    target={item.name == 'docs' ? '_blank' : ''}
                     to={item.path}
                     className={`${isActive ? 'activeLink' : 'link'}`}
                   >
@@ -123,7 +124,7 @@ const links = [
     name: 'stake',
   },
   {
-    path: '#',
+    path: 'https://docs.slake.network',
     name: 'docs',
   },
 ];

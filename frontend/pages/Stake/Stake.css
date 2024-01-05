@@ -36,7 +36,7 @@
   line-height: 72px;
   font-size: 56px;
   font-family: Satoshi;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .lDes {
@@ -126,7 +126,7 @@
   font-size: 40px;
   text-align: center;
   font-family: Satoshi;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .stakeD {
@@ -244,16 +244,16 @@
 
 .balText {
   font-size: 20px;
-  font-family: Satoshi;
-  font-weight: 900;
+  font-weight: 700;
   color: #06f;
+  font-family: Satoshi;
 }
 
 .balValue {
   font-size: 20px;
   color: #06f;
+  font-weight: 700;
   font-family: Satoshi;
-  font-weight: 900;
 }
 .input {
   width: 100%;

@@ -5,6 +5,7 @@ import { FaDiscord } from 'react-icons/fa';
 import { FaMediumM } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import SlakeLogo from '/frontend/assets/slake-logo.svg'
 import './Footer.css';
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
 
           <div className='logo-container'>
             <Link to='/'>
-              <img src='/frontend/assets/logo.svg' className='logo-image ' alt='' />
+              <img src={SlakeLogo} className='logo-image ' alt='' />
             </Link>
           </div>
           {/* links ------>  */}
@@ -53,15 +54,7 @@ const Footer = () => {
 const footerLinks = [
   {
     path: '#',
-    name: 'about us',
-  },
-  {
-    path: '#',
-    name: 'stats',
-  },
-  {
-    path: '#',
-    name: 'blog',
+    name: 'docs',
   },
   {
     path: '#',

@@ -22,10 +22,9 @@
 .hroTitle {
   font-size: 96px;
   color: #fff;
-  font-weight: bold;
   line-height: 0px;
   font-family: Satoshi;
-  font-weight: 900;
+  font-weight: 700;
   margin: 5rem 0px;
 }
 .subtitle {
@@ -55,7 +54,7 @@
   background-color: white;
   border-radius: 64px;
   font-family: 'Satoshi';
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-top: 2rem;
 }
