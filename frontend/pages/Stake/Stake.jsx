@@ -64,7 +64,7 @@ const Stake = () => {
               </p>
               <p className='stakeD'>
                 {activeButton === 'stake'
-                  ? 'Stake ICP and earn voting rewards without locking yp your tokens.'
+                  ? 'Stake ICP and earn voting rewards without locking your tokens.'
                   : 'Stop earning staking rewards and withdraw your ICP.'}
               </p>
               {/* stake and unstake button ------>  */}
@@ -150,7 +150,7 @@ const Stake = () => {
                 {/* 1CP equal to  ------------>  */}
                 <div className='icpWra'>
                   <p className='netTit'>
-                    1 {activeButton === 'stake' ? 'ICP' : '1 sICP'} =
+                    1 {activeButton === 'stake' ? 'ICP' : 'sICP'} =
                   </p>
                   <p className='netVal'>
                     {activeButton === 'stake' ? ' 00.9785 sICP' : ' 1.1045 ICP'}
