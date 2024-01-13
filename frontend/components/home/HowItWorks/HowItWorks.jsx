@@ -3,10 +3,8 @@ import ComponentWrapper from '../../wrappers/ComponentWrapper';
 import Step from './Step';
 import './HowItWorks.css';
 import Step1Img from "/frontend/assets/stakeICP.svg";
-import Step2Img from "/frontend/assets/step2.svg";
-import Step3Img from "/frontend/assets/step3.svg";
-import Design02 from "/frontend/assets/Image02.png";
-import Design03 from "/frontend/assets/Image03.png";
+import Step2 from "/frontend/assets/Step2.svg";
+import Step3 from "/frontend/assets/Step3.svg";
 
 const HowItWorks = () => {
   return (
@@ -51,14 +49,14 @@ const steps = [
     title: 'Earn ICP & SLAKE Rewards',
     des: 'Earn ICP staking and voting rewards. Stakers on Slake also receive the Slake governance token.',
     isRight: false,
-    img: Design02
+    img: Step2
   },
   {
     stepNum: '03',
     title: 'Redeem ICP with Flexibility',
     des: 'Your Slake Staked ICP can be redeemed for ICP without lengthy lockups, subject to available liquidity.',
     isRight: true,
-    img: Design03
+    img: Step3
   },
 ];
 
