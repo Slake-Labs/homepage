@@ -5,6 +5,7 @@ import Footer from './shared/Layout/Footer/Footer';
 import Home from '../pages/Home';
 import Stake from '../pages/Stake/Stake';
 import Banner from './shared/Layout/Banner/Banner';
+import Defi from '../pages/Defi/Defi';
 
 const AppRouter = () => {
   return (
@@ -14,6 +15,7 @@ const AppRouter = () => {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/stake' element={<Stake />}></Route>
+        <Route path='/defi' element={<Defi />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

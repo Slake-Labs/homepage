@@ -24,7 +24,11 @@ const Footer = () => {
           <div className='links-container'>
             {footerLinks.map((item, index) => {
               return (
-                <Link className='fLink' key={index} to={item.path}>
+                <Link 
+                className='fLink' 
+                key={index}
+                target={item.name == 'docs' ? '_blank' : ''}
+                to={item.path}>
                   {item.name}
                 </Link>
               );
@@ -53,7 +57,7 @@ const Footer = () => {
 
 const footerLinks = [
   {
-    path: '#',
+    path: 'https://docs.slake.network',
     name: 'docs',
   },
   {
@@ -61,7 +65,7 @@ const footerLinks = [
     name: 'faq',
   },
   {
-    path: '#',
+    path: '/defi',
     name: 'DeFi',
   },
 ];

@@ -1,0 +1,29 @@
+.defiContainer {
+    width: 100%;
+    position: relative;
+    padding: 70px 0px;
+    min-height: calc(100vh - 106px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .defiContainer {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .defiTitle {
+    font-size: 48px;
+    color: #fff;
+    font-family: Satoshi;
+    font-weight: 700;
+    margin: 2rem 0px;
+  }
+  .defiSubtitle {
+    font-size: 32px;
+    color: #fff;
+    font-family: Satoshi;
+    font-weight: 500;
+  }
